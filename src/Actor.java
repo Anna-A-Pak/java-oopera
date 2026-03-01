@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Actor extends Person {
     private final int height;
 
@@ -10,15 +8,6 @@ public class Actor extends Person {
 
     public int getHeight() {
         return height;
-    }
-
-    @Override
-    public String toString() {
-        return "Actor{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname +
-                " (height=" + height +
-                ")}";
     }
 
     @Override
@@ -36,5 +25,13 @@ public class Actor extends Person {
         int result = super.hashCode();
         result = 31 * result + height;
         return result;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Actor{" + super.toString() +
+                ", height=" + height +
+                "} ";
     }
 }

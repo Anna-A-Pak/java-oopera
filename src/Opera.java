@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Opera extends MusicalShow {
     private int choirSize;
 
